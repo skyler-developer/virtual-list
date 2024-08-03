@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+// import App from "./fixed/index.jsx";
+// import App from "./dynamic/index.jsx";
+import App from "./variable/index.jsx";
+import "./app.css";
 const root = ReactDOM.createRoot(document.getElementById("app"));
 root.render(<App />);
 

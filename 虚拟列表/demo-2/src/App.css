@@ -1,4 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
+.list {
+    border: 1px solid gray;
+}
+
+.list-item-odd,
+.list-item-even {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-item-odd {
+    background-color: lightblue;
+}
+.list-item-even {
+    background-color: lightcoral;
 }
