@@ -1,3 +1,4 @@
+import React from "react";
 import VariableSizeList from "./dynamic-size-list";
 
 const items = [];
