@@ -6,6 +6,7 @@ const measuredData = {
     LastMeasuredItemIndex: -1,
 };
 
+// 获取预估高度，用于中间容器
 const estimatedHeight = (defaultEstimatedItemSize = 50, itemCount) => {
     let measuredHeight = 0;
     const { measuredDataMap, LastMeasuredItemIndex } = measuredData;
@@ -74,6 +75,7 @@ const getEndIndex = (props, startIndex) => {
     return endIndex;
 };
 
+// 获取渲染列表范围
 const getRangeToRender = (props, scrollOffset) => {
     const { itemCount } = props;
     const startIndex = getStartIndex(props, scrollOffset);
@@ -100,6 +102,7 @@ const VariableSizeList = (props) => {
     };
 
     const contentStyle = {
+        // 预估高度
         height: estimatedHeight(itemEstimatedSize, itemCount),
         width: "100%",
     };
